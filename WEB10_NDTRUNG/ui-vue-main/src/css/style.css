@@ -1,0 +1,165 @@
+* {
+    font-family: notosans;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --width-sidebar: 200px;
+    --black-color: #000;
+    --white-color: #fff;
+    --red-color: #FF0000;
+    /* Primary - Extra */
+    --primary-color: #50b83c;
+    --primary-hover-color: #73c663;
+    --primary-focus-color: #409330;
+    --delete-color: #e60000;
+    --delete-hover-color: #eb3333;
+    --delete-focus-color: #b80000;
+    --border-button-extra-color: #E6E6E6;
+    --extra-color: #fff;
+    --extra-focus-color: #ebebeb;
+    --extra-hover-color: #f6f6f6;
+    /* Input */
+    --border-input-color: #bfbfbf;
+    --input-error-color: #FF0000;
+    --input-error-text-color: #ff4747;
+    --placeholder-color: #bbb;
+    /* Combobox */
+    --combobox-data-color: #fff;
+    --combobox-data-hover-color: rgb(185, 226, 177);
+    --combobox-data-active-color: rgb(185, 226, 177);
+    --box-shadow: rgba(0, 0, 0, 0.35);
+    /* Form */
+    --form-footer: #ccc;
+    /* Toast */
+    --error-title-color: #DE3618;
+    /* Table and Context Menu*/
+    --text-color: #424242;
+    --dropdown-hover-color: #CCE4FF;
+    --table-update-color: #0075c0;
+    --table-update-item-hover-color: #e8e9ed;
+    --table-update-text-hover-color: #409330;
+    --table-border-color: #bbbbbb;
+    --table-trtd--color: #fff;
+    --table-hover-color: #CEEAD9;
+    --table-selected-color: #9CD5B3;
+    --table-thead-color: #edeef2;
+    --table-border-color: #c7c7c7;
+    --table-background-color: #eeeeee;
+    /* Sidebar */
+    --sidebar-color: #021E0D;
+    --pseudo-color: #2c9f1c;
+    --sidebar-hover-color: #055B27;
+    --sidebar-selected-color: #033C1A;
+    --item-text: #a8a8a8;
+    /* Dialog */
+    --border-dialog-content: #b8bcc3;
+    --dialog-title: #1f1f1f;
+    --title-color: #1f1f1f;
+    --form-wrapper: rgba(85, 79, 79, 0.2);
+    /* Popup */
+    --border-popup-content: #666666;
+    --pop-up-wrapper: rgba(85, 79, 79, 0.2);
+    /* Background*/
+    --background-dark: rgba(0, 0, 0, 0.2);
+    /* Scrollbar  */
+    --content-scrollbar-track: #f1f1f1;
+    --content-scrollbar-thumb: #b8bcc3;
+    --content-scrollbar-thumb-hover: #b8bcc3;
+    --sidebar-scrollbar-track: #021E0D;
+    --sidebar-scrollbar-thumb: #055B27;
+    --sidebar-scrollbar-thumb-hover: #055B27;
+    /* Tooltip */
+    --tooltip-color: #38393d;
+    /* Custom */
+    --main-title: #111;
+    --border-color: #cecece;
+    --hover-color: #E6F2FF;
+    --palaceholder-color: #9e9e9e;
+    --textfield-hover: #f6f6f6;
+    --textfield-focus: #ebebeb;
+    --textfield-icon: #666666;
+    --main-content-color: #f3f4f8;
+}
+
+body {
+    background-color: #f3f4f8;
+}
+
+@font-face {
+    font-family: notosans;
+    src: url(../assets/fonts/notosans-regular.2cb88a13.woff2);
+}
+
+.m-flex {
+    display: flex;
+}
+
+.m-row {
+    width: 100%;
+}
+
+.m-w-300 {
+    width: 300px;
+}
+
+.mr-8 {
+    margin-right: 8px;
+}
+
+.ml-8 {
+    margin-left: 8px;
+}
+
+.dis-none {
+    display: none;
+}
+
+.dis-block {
+    display: block;
+}
+
+.pt-9 {
+    padding-top: 9px;
+}
+
+.ml-16 {
+    margin-left: 16px;
+}
+
+.aline-item-center {
+    align-items: center;
+}
+
+.mr-6 {
+    margin-right: 6px;
+}
+
+.mr-16 {
+    margin-right: 16px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.pb-0 {
+    padding-bottom: 0 !important;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #409330 !important;
+    cursor: pointer !important;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.z-index-5 {
+    z-index: 99 !important;
+}

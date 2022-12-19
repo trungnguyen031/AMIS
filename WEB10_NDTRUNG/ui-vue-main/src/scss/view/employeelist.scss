@@ -1,0 +1,242 @@
+/* Stiky */
+
+
+/* Cột 1 */
+
+
+/* Cột 2 */
+
+
+/* Cột 3 */
+
+
+/* Cột chức năng */
+
+
+/* Update Table */
+
+.m-table {
+    border-collapse: collapse;
+    border-spacing: unset;
+    border: unset;
+    width: 100%;
+    tr {
+        cursor: pointer;
+        height: 48px;
+        border-bottom: 1px solid var(--table-border-color);
+        td {
+            background-color: var(--white-color);
+            cursor: pointer;
+            padding-left: 16px;
+            padding-right: 16px;
+            white-space: nowrap;
+            z-index: 0;
+        }
+    }
+    th {
+        cursor: pointer;
+        padding-left: 16px;
+        padding-right: 16px;
+        white-space: nowrap;
+        z-index: 0;
+    }
+    .text-align-left {
+        text-align: left;
+    }
+    .text-align-right {
+        text-align: right;
+    }
+    .text-align-center {
+        text-align: center;
+    }
+    tbody {
+        tr {
+            &:hover {
+                td {
+                    background-color: var(--table-hover-color);
+                    cursor: pointer;
+                    z-index: 0;
+                }
+            }
+        }
+        td {
+            &:first-child {
+                background-color: var(--white-color);
+                position: sticky;
+                left: 0px;
+                z-index: 1;
+            }
+            &:nth-child(2) {
+                background-color: var(--white-color);
+                position: sticky;
+                left: 50px;
+                z-index: 1;
+            }
+            &:nth-child(3) {
+                background-color: var(--white-color);
+                position: sticky;
+                left: 176px;
+                z-index: 1;
+            }
+            &:last-child {
+                position: sticky;
+                right: 0px;
+                z-index: 1;
+                width: 120px;
+            }
+        }
+    }
+    thead {
+        height: 48px;
+        background-color: var(--table-thead-color);
+        border-bottom: 1px solid var(--table-border-color);
+        position: sticky;
+        top: -1px;
+        z-index: 2;
+        th {
+            &:first-child {
+                width: 24px !important;
+                background-color: var(--table-thead-color);
+                position: sticky;
+                top: -1px;
+                left: 0px;
+                z-index: 3;
+            }
+            &:nth-child(2) {
+                width: 160px !important;
+                background-color: var(--table-thead-color);
+                position: sticky;
+                top: -1px;
+                left: 50px;
+                z-index: 3;
+            }
+            &:nth-child(3) {
+                width: 160px !important;
+                background-color: var(--table-thead-color);
+                position: sticky;
+                top: -1px;
+                left: 176px;
+                z-index: 3;
+            }
+            &:last-child {
+                background-color: var(--table-thead-color);
+                position: sticky;
+                top: -1px;
+                right: 0px;
+                z-index: 3;
+                width: 120px;
+            }
+        }
+    }
+}
+
+.thead__id-number {
+    position: relative;
+}
+
+.m-row-selected {
+    td {
+        background-color: var(--table-selected-color) !important;
+    }
+}
+
+.update-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+        margin-right: 16px;
+        border: none;
+        background-color: unset;
+        color: var(--table-update-color);
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
+
+.icon-update {
+    position: relative;
+    z-index: 999;
+    border: 1px solid transparent;
+}
+
+.icon-update-focus {
+    border: 1px solid var(--table-update-color);
+}
+
+.list-update {
+    position: absolute;
+    width: 100;
+    height: 50;
+    top: 22px;
+    right: 0;
+    border: 1px solid var(--table-border-color);
+    border-radius: 4px;
+    background-color: var(--white-color);
+    ul {
+        list-style-type: none;
+        width: 100px;
+        background-color: var(--white-color);
+        z-index: 10;
+        li {
+            height: 24px;
+            line-height: 24px;
+            text-align: left;
+            padding-left: 8px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            background-color: var(--white-color);
+            &:hover {
+                background-color: var(--table-update-item-hover-color);
+                color: var(--primary-focus-color);
+            }
+        }
+    }
+}
+
+.show {
+    display: block;
+}
+
+.table-header-right {
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
+}
+
+.table-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.btn-delete {
+    background-color: #e81e1e;
+}
+
+.btn-delete:hover {
+    background-color: #eb3333;
+}
+
+.btn-delete:focus {
+    background-color: #e81e1e;
+}
+
+.overlay-delete {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--red-color);
+    width: 100%;
+    height: 100%;
+}
+
+.noContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 46px;
+    b {
+        font-size: 24px;
+    }
+}

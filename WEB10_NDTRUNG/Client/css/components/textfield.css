@@ -1,0 +1,112 @@
+.textfield__label {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    color: var(--title-color);
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.textfield__label--require {
+    color: var(--red-color);
+}
+
+.textfield__container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.textfield__container--radio {
+    display: flex;
+    align-items: center;
+}
+
+.textfield__container--radio+.textfield__container--radio {
+    margin-left: 24px;
+}
+
+input.textfield--error {
+    border: 1px solid var(--red-color);
+}
+
+.textfield__input {
+    width: 100%;
+    height: 36px;
+    /* padding: 8px 36px 8px 12px; */
+    padding: 8px 12px;
+    border: 1px solid var(--border-input-color);
+    font-size: 14px;
+    line-height: 20px;
+    /* margin-bottom: 8px; */
+    text-align: left;
+    border-radius: var(--border-radius);
+    outline: none;
+}
+
+.textfield__input--pagging {
+    width: 72px;
+}
+
+.textfield__input::placeholder {
+    color: var(--palaceholder-color);
+}
+
+.textfield__input:hover {
+    background-color: var(--textfield-hover);
+}
+
+.textfield__input:focus {
+    border-color: var(--primary-color);
+    background-color: var(--white-color);
+}
+
+.textfield__icon {
+    position: absolute;
+    top: 50%;
+    right: 1px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    height: 34px;
+    width: 34px;
+    color: var(--textfield-icon);
+    background-color: transparent;
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.textfield__icon:focus {
+    background-color: var(--textfield-focus);
+}
+
+.textfield__input--radio {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.textfield__container>span {
+    font-size: 14px;
+    color: var(--title-color);
+}
+
+.input-error {
+    display: none;
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    width: 100%;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--red-color);
+}
+
+.textfield--error+.input-error {
+    display: block;
+}
+
+.textfield__input.textfield__input--required.textfield--error+p.input-error {
+    display: block;
+}

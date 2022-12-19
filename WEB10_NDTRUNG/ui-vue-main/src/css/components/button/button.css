@@ -1,0 +1,42 @@
+.m-btn {
+    height: 36px;
+    border-radius: 4px;
+    padding: 0 16px;
+    border: none;
+    background-color: var(--primary-color);
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+}
+
+.m-btn:hover {
+    background-color: var(--primary-hover-color);
+    cursor: pointer;
+}
+
+.m-btn:focus {
+    background-color: var(--primary-focus-color);
+    cursor: pointer;
+}
+
+.m-btn-extra {
+    background-color: var(--extra-color);
+    cursor: pointer;
+    color: var(--black-color);
+    border: 1px solid var(--border-button-extra-color);
+    font-weight: 500;
+    font-size: 14;
+}
+
+.m-btn-extra:hover {
+    background-color: var(--extra-hover-color);
+}
+
+.m-btn-extra:focus {
+    background-color: var( --extra-focus-color);
+}

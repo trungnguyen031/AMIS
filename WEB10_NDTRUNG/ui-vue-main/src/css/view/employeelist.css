@@ -1,0 +1,250 @@
+.m-table {
+    border-collapse: collapse;
+    border-spacing: unset;
+    border: unset;
+    width: 100%;
+}
+
+.m-table tr {
+    cursor: pointer;
+    height: 48px;
+    border-bottom: 1px solid var(--table-border-color);
+}
+
+.thead__id-number {
+    position: relative;
+}
+
+.m-table tr td {
+    background-color: var(--white-color);
+}
+
+.m-table tr td,
+.m-table th {
+    /* border: 1px solid #bbbbbb; */
+    cursor: pointer;
+    padding-left: 16px;
+    padding-right: 16px;
+    white-space: nowrap;
+    z-index: 0;
+}
+
+.m-table .text-align-left {
+    text-align: left;
+}
+
+.m-table .text-align-right {
+    text-align: right;
+}
+
+.m-table .text-align-center {
+    text-align: center;
+}
+
+.m-table tbody tr:hover td {
+    background-color: var(--table-hover-color);
+    cursor: pointer;
+    z-index: 0;
+}
+
+.m-row-selected td {
+    background-color: var(--table-selected-color) !important;
+}
+
+.update-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.update-table button {
+    margin-right: 16px;
+    border: none;
+    background-color: unset;
+    color: var(--table-update-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* Stiky */
+
+.m-table thead {
+    height: 48px;
+    background-color: var(--table-thead-color);
+    border-bottom: 1px solid var(--table-border-color);
+    position: sticky;
+    top: -1px;
+    z-index: 2;
+}
+
+
+/* Cột 1 */
+
+.m-table thead th:first-child {
+    width: 24px !important;
+    background-color: var(--table-thead-color);
+    position: sticky;
+    top: -1px;
+    left: 0px;
+    z-index: 3;
+}
+
+.m-table tbody td:first-child {
+    background-color: var(--white-color);
+    position: sticky;
+    left: 0px;
+    z-index: 1;
+}
+
+
+/* Cột 2 */
+
+.m-table thead th:nth-child(2) {
+    width: 160px !important;
+    background-color: var(--table-thead-color);
+    position: sticky;
+    top: -1px;
+    left: 50px;
+    z-index: 3;
+}
+
+.m-table tbody td:nth-child(2) {
+    background-color: var(--white-color);
+    position: sticky;
+    left: 50px;
+    z-index: 1;
+}
+
+
+/* Cột 3 */
+
+.m-table thead th:nth-child(3) {
+    width: 160px !important;
+    background-color: var(--table-thead-color);
+    position: sticky;
+    top: -1px;
+    left: 176px;
+    z-index: 3;
+}
+
+.m-table tbody td:nth-child(3) {
+    background-color: var(--white-color);
+    position: sticky;
+    left: 176px;
+    z-index: 1;
+}
+
+
+/* Cột chức năng */
+
+.m-table thead th:last-child {
+    background-color: var(--table-thead-color);
+    position: sticky;
+    top: -1px;
+    right: 0px;
+    z-index: 3;
+    width: 120px;
+}
+
+.m-table tbody td:last-child {
+    /* background-color: #fff; */
+    position: sticky;
+    right: 0px;
+    z-index: 1;
+    width: 120px;
+}
+
+
+/* Update Table */
+
+.icon-update {
+    position: relative;
+    z-index: 999;
+    border: 1px solid transparent;
+}
+
+.icon-update-focus {
+    border: 1px solid var(--table-update-color);
+}
+
+.list-update {
+    position: absolute;
+    width: 100;
+    height: 50;
+    top: 22px;
+    right: 0;
+    border: 1px solid var(--table-border-color);
+    border-radius: 4px;
+    background-color: var(--white-color);
+}
+
+.show {
+    display: block;
+}
+
+.list-update ul {
+    list-style-type: none;
+    width: 100px;
+    background-color: var(--white-color);
+    z-index: 10;
+}
+
+.list-update ul li {
+    height: 24px;
+    line-height: 24px;
+    text-align: left;
+    padding-left: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: var(--white-color);
+}
+
+.list-update ul li:hover {
+    background-color: var(--table-update-item-hover-color);
+    color: var(--primary-focus-color);
+}
+
+.table-header-right {
+    display: flex;
+    align-items: center;
+    padding-right: 8px;
+}
+
+.table-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.btn-delete {
+    background-color: #e81e1e;
+}
+
+.btn-delete:hover {
+    background-color: #eb3333;
+}
+
+.btn-delete:focus {
+    background-color: #e81e1e;
+}
+
+.overlay-delete {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: var(--red-color);
+    width: 100%;
+    height: 100%;
+}
+
+.noContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 46px;
+}
+
+.noContent b {
+    font-size: 24px;
+}

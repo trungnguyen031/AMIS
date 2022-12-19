@@ -1,0 +1,48 @@
+.m-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.m-dialog__content {
+    width: 444px;
+    min-width: 444px;
+    height: 183px;
+    background-color: var(--white-color);
+    border-radius: 4px;
+}
+
+.m-dialog__content--main {
+    padding: 32px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.content-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.message-content {
+    overflow: auto;
+    max-height: 400px;
+    margin-bottom: 20px;
+    padding-left: 16px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+}

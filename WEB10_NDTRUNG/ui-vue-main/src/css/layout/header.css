@@ -1,0 +1,30 @@
+.m-header {
+    width: calc(100% - 200px);
+    height: 56px;
+    background-color: var(--white-color);
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.m-header__left {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+
+.header-text {
+    padding-right: 8px;
+}
+
+.m-header__right {
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+}
+
+.user-name {
+    padding-left: 4px;
+    padding-right: 8px;
+}

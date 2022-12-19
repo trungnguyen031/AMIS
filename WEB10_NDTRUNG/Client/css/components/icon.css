@@ -1,0 +1,237 @@
+.m-icon-wrapper {
+    width: 36px;
+    height: 36px;
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.m-icon {
+    background: url(../../assets/img/Sprites.64af8f61.svg) no-repeat;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.m-icon-small {
+    width: 18px;
+    height: 18px;
+}
+
+.m-icon-large {
+    width: 32px;
+    height: 32px;
+}
+
+.m-icon+.m-icon {
+    margin-left: 8px;
+}
+
+
+/* Icon header */
+
+.m-icon--option {
+    background-position: -425px -88px;
+}
+
+.m-icon--menu {
+    background-position: -843px -30px;
+}
+
+.m-icon--menu-collapse {
+    background-position: -312px -32px;
+}
+
+.m-icon--chervon-down {
+    background-position: -1124px -357px;
+}
+
+.m-icon--bell {
+    background-position: -257px -32px;
+}
+
+.m-icon--message {
+    background-position: -368px -32px;
+}
+
+.m-icon--questioon {
+    background-position: -201px -33px;
+}
+
+.m-icon--no-avatar {
+    background-position: -352px -894px;
+    width: 32px;
+    height: 32px;
+}
+
+
+/* Icon Sidebar */
+
+.m-icon--general {
+    background-position: -29px -1629px;
+}
+
+.m-icon--general--selected {
+    background-position: -30px -1585px !important;
+}
+
+.m-icon--cash {
+    background-position: -73px -1628px;
+}
+
+.m-icon--deposits {
+    background-position: -117px -1630px;
+}
+
+.m-icon--purchase {
+    background-position: -161px -1630px;
+}
+
+.m-icon--sell {
+    background-position: -205px -1628px;
+}
+
+.m-icon--billManagement {
+    background-position: -249px -1629px;
+}
+
+.m-icon--warehouse {
+    background-position: -291px -1629px;
+}
+
+.m-icon--tools {
+    background-position: -335px -1630px;
+}
+
+.m-icon--fixedAssets {
+    background-position: -378px -1630px;
+}
+
+.m-icon--tax {
+    background-position: -423px -1630px;
+}
+
+.m-icon--price {
+    background-position: -467px -1629px;
+}
+
+.m-icon--synthetic {
+    background-position: -510px -1629px;
+}
+
+.m-icon--budget {
+    background-position: -378px -1660px;
+}
+
+.m-icon--report {
+    background-position: -547px -1631px;
+}
+
+.m-icon--financialAnalysis {
+    background-position: -204px -1662px;
+}
+
+
+/* Icon Content */
+
+.m-icon--refresh {
+    background-position: -1096px -88px;
+}
+
+.m-icon-search {
+    background-image: url(../../assets/icon/search.png);
+    background-size: 32px 32px;
+    background-repeat: no-repeat;
+}
+
+.m-icon--excel {
+    background-position: -1265px -88px;
+}
+
+.m-icon--dropdown {
+    background-position: -887px -350px;
+    border: 1px solid var(--white-color);
+    width: 36px;
+    height: 36px;
+}
+
+
+/* .m-icon--dropdown:hover {
+    background-color: var(--table-update-item-hover-color);
+} */
+
+
+/* .m-icon--dropdown:focus {
+   
+} */
+
+
+/* Icon Popup */
+
+.m-icon--help {
+    background-position: -88px -144px;
+}
+
+.m-icon--close {
+    background-position: -144px -144px;
+}
+
+.m-icon__help-popup {
+    width: 36px;
+    height: 36px;
+    background-position: -832px -462px;
+}
+
+
+/* Icon Combobox and dropdown */
+
+.icon-angle {
+    background-image: url(../../assets/icon/angle-down.png);
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+
+.m-icon-down-dd {
+    background-position: -1120px -354px;
+}
+
+
+/* Icon Paging*/
+
+.m-icon-right {
+    background-image: url(../..//assets/img/Sprites.64af8f61.svg);
+    background-position: -84px -361px;
+    width: 14px;
+    height: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: unset;
+}
+
+.m-icon-left {
+    background-image: url(../..//assets/img/Sprites.64af8f61.svg);
+    background-position: -36px -361px;
+    width: 14px;
+    height: 14px;
+    border: none;
+    cursor: pointer;
+    background-color: unset;
+}
+
+
+/* Icon dialog */
+
+.m-icon-warning {
+    background-image: url(../..//assets/img/Sprites.64af8f61.svg);
+    background-position: -593px -463px;
+    width: 50px;
+    height: 37px;
+}
+
+.m-icon__error-popup {
+    height: 36px;
+    width: 36px;
+    background-position: -752px -462px;
+}

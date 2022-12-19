@@ -1,0 +1,12 @@
+Phòng bảo vệ|Phòng hành chính nhân sự|Phòng tài chính|Phòng Marketing|Phòng công nghệ thông tin|Phòng giám đốc|Phòng sản xuất
+
+($"VNHo.txt") (($"VNDemNam.txt")|($"VNDemNu.txt")) (($"VNTenNam.txt")|($"VNTenNu.txt")) 
+
+Trưởng Phòng|Phó Phòng|Nhân viên|Trưởng dự án|Nhóm trưởng
+D001|D002|D003|D004|D005|D006|D007
+
+Vietcombank|Techcombank|BIDV|ACB|VIB|MBank
+
+Công An Hà Nội|Công An TPHCM|Công An Đà Nẵng
+
+Hà Nội|Hải Phòng|Huế|Đà Nẵng|TP HCM

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-free-6.2.0-web/css/all.min.css" />
+
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <link rel="stylesheet" href="../css/common/style.css" />
+    <title>Quản lý nhân viên - AMIS Kế toán</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Start Header -->
+        <div class="header m-d-flex">
+            <div class="header__left m-d-flex">
+                <div class="header-left__button">
+                    <div class="m-icon m-icon--option"></div>
+                </div>
+                <div class="header-left__logo"></div>
+            </div>
+            <div class="header__right m-d-flex">
+                <div class="toggle-sidebar m-d-flex">
+                    <div class="m-icon m-icon--menu" title="Thu gọn"></div>
+                </div>
+                <div class="header-right__title m-d-flex">
+                    <span>CÔNG TY TNHH SẢN XUẤT - THƯƠNG MẠI - DỊCH VỤ QUY
+                     PHÚC</span
+                  >
+                  <div class="m-icon m-icon--chervon-down"></div>
+               </div>
+               <!-- <div class="header-rigth__search">
+                  <div class="textfield__container">
+                     <input type="text" class="textfield__input" />
+                     <button class="textfield__icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                     </button>
+                  </div>
+               </div> -->
+               <div class="header-right__icons m-d-flex">
+                 
+                  <div class="header-right__icon m-d-flex">
+                     <div class="m-icon m-icon--bell"></div>
+                  </div>
+               </div>
+               <div class="header-right__user m-d-flex">
+                  <div class="header-user__avatar">
+                     <div class="m-icon m-icon--no-avatar"></div>
+                  </div>
+                  <p class="header-user__name">Nguyễn Đức Trung</p>
+                  <div class="m-icon m-icon--chervon-down"></div>
+               </div>
+            </div>
+         </div>
+         <!-- End Header -->
+         <!-- Start Container -->
+         <!-- Start Sidebar -->
+         <div class="container">
+            <div class="sidebar">
+               <ul class="sidebar-content">
+                  <li class="sidebar-item m-d-flex selected">
+                     <div
+                        class="m-icon m-icon--general m-icon--general--selected"
+                     ></div>
+                     <span class="sidebar-text hide-text-ellipsis"
+                        >Tổng quan</span
+                     >
+                  </li>
+                  <li class="sidebar-item m-d-flex">
+                     <div class="m-icon m-icon--cash"></div>
+                     <span class="sidebar-text hide-text-ellipsis"
+                        >Tiền mặt</span
+                     >
+                  </li>
+                  <li class="sidebar-item m-d-flex">
+                     <div class="m-icon m-icon--deposits"></div>
+                     <span class="sidebar-text hide-text-ellipsis"
+                        >Tiền gửi</span
+                     >
+                  </li>
+                  <li class="sidebar-item m-d-flex">
+                     <div class="m-icon m-icon--purchase"></div>
+                     <span class="sidebar-text hide-text-ellipsis"
+                        >Mua hàng</span
+                     >
+                  </li>
+                  <li class="sidebar-item m-d-flex">
+                     <div class="m-icon m-icon--sell"></div>
+                     <span class="sidebar-text hide-text-ellipsis"
+                        >Bán hàng</span
+                     >
+                  </li>
+                  <li class="sidebar-item m-d-flex">
+                     <div class="m-icon m-icon--billManagement"></div>
+                     <span class="sidebar-text hide-text-ellipsis"
+                        >Quản lý hóa đơn</span
+                     >
+                  </li>
+                  <li class="sidebar-item m-d-flex">
+                     <div class="m-icon m-icon--warehouse"></div>
+                     <span class="sidebar-text hide-text-ellipsis">Kho</span>
+                    </li>
+                    <li class="sidebar-item m-d-flex">
+                        <div class="m-icon m-icon--tools"></div>
+                        <span class="sidebar-text hide-text-ellipsis">Công cụ dụng cụ</span
+                     >
+                  </li>
+                  <li class="sidebar-item m-d-flex">
+                     <div class="m-icon m-icon--fixedAssets"></div>
+                     <span class="sidebar-text hide-text-ellipsis"
+                        >Tài sản cố định</span
+                     >
+                  </li>
+                  <li class="sidebar-item m-d-flex">
+                     <div class="m-icon m-icon--tax"></div>
+                     <span class="sidebar-text hide-text-ellipsis">Thuế</span>
+                    </li>
+                    <li class="sidebar-item m-d-flex">
+                        <div class="m-icon m-icon--price"></div>
+                        <span class="sidebar-text hide-text-ellipsis">Giá thành</span
+                     >
+                  </li>
+                  <li class="sidebar-item m-d-flex">
+                     <div class="m-icon m-icon--synthetic"></div>
+                     <span class="sidebar-text hide-text-ellipsis"
+                        >Tổng hợp</span
+                     >
+                  </li>
+                  <li class="sidebar-item m-d-flex">
+                     <div class="m-icon m-icon--budget"></div>
+                     <span class="sidebar-text hide-text-ellipsis"
+                        >Ngân sách</span
+                     >
+                  </li>
+                  <li class="sidebar-item m-d-flex">
+                     <div class="m-icon m-icon--report"></div>
+                     <span class="sidebar-text hide-text-ellipsis"
+                        >Báo cáo</span
+                     >
+                  </li>
+                  <li class="sidebar-item m-d-flex">
+                     <div class="m-icon m-icon--financialAnalysis"></div>
+                     <span class="sidebar-text hide-text-ellipsis"
+                        >Phân tích tài chính</span
+                     >
+                  </li>
+               </ul>
+            </div>
+            <div class="main">
+               <div class="main__header m-d-flex">
+                  <span class="main-header__title">Nhân viên</span>
+                        <div class="main-header__actions m-d-flex">
+                            <button class="btn btn-primary btn__add-employee">
+                        Thêm mới nhân viên
+                     </button>
+                        </div>
+                </div>
+                <!-- End Sidebar -->
+                <!-- Start Main Content -->
+                <div class="main__content">
+                    <div class="main-content__tools m-d-flex">
+                        <div class="main-content-tools__left">
+                            <div class="batch-excecution">
+                                <button class="btn btn-delete" onclick="deleteMulti">
+                              Xóa
+                           </button>
+                            </div>
+                        </div>
+                        <div class="m-d-flex">
+                            <div class="textfield__container m-margin-0 m-mr-12 witdh-300">
+                                <input id="searchEmployee" type="text" class="textfield__input m-pr-36" placeholder="Tìm kiếm theo tên, mã nhân viên" />
+                                <button class="textfield__icon m-icon-search">
+                              <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                           </button>
+                            </div>
+                            <div class="main-content-tools m-d-flex">
+                                <div class="m-icon-wrapper">
+                                    <div id="btnRefresh" class="m-icon m-icon--refresh"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-content__table">
+                        <div class="m-table__content">
+                            <table id="tblEmployee">
+                                <thead>
+                                    <tr>
+                                        <th class="th-anchor m-w-40">
+                                            <input type="checkbox" />
+                                        </th>
+                                        <th class="hide-text-ellipsis table-witdh m-text-center">
+                                            MÃ NHÂN VIÊN
+                                        </th>
+                                        <th class="hide-text-ellipsis m-w-250 m-text-center">
+                                            TÊN NHÂN VIÊN
+                                        </th>
+                                        <th class="hide-text-ellipsis table-witdh m-text-center">
+                                            GIỚI TÍNH
+                                        </th>
+                                        <th class="hide-text-ellipsis table-witdh m-text-center">
+                                            NGÀY SINH
+                                        </th>
+                                        <th class="hide-text-ellipsis table-witdh m-text-center" title="Số chứng minh nhân dân">
+                                            SỐ CMND
+                                        </th>
+                                        <th class="hide-text-ellipsis table-witdh m-text-center">
+                                            CHỨC DANH
+                                        </th>
+                                        <th class="hide-text-ellipsis table-witdh m-text-center">
+                                            TÊN ĐƠN VỊ
+                                        </th>
+                                        <th class="hide-text-ellipsis table-witdh m-text-center">
+                                            SỐT TÀI KHOẢN
+                                        </th>
+                                        <th class="hide-text-ellipsis table-witdh m-text-center">
+                                            TÊN NGÂN HÀNG
+                                        </th>
+                                        <th class="hide-text-ellipsis table-witdh m-text-center">
+                                            CHI NHÁNH NGÂN HÀNG
+                                        </th>
+                                        <th class="th-anchor th-anchor--end m-w-120 m-text-center">
+                                            CHỨC NĂNG
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                        <div class="m-table_pagination m-d-flex">
+                            <div class="pagination__left">
+                                Tổng:
+                                <b> 0 </b>
+                            </div>
+                            <div class="pagination__right m-d-flex">
+                                <div class="m-r-8">Số bản ghi/trang :
+                                </div>
+                                <div class="record-in-page">
+
+                                    <div class="textfield__container m-margin-0">
+                                        <input type="text" class="textfield__input textfield__input--pagging" readonly value="100" numberRecord="100" />
+                                        <button class="textfield__icon m-icon m-icon-large m-icon-down-dd">
+                                 </button>
+
+                                        <ul class="dropdownlist dropdownlist--pagination">
+                                            <li class="dropdown__item" value="10">
+                                                10
+                                            </li>
+                                            <li class="dropdown__item" value="20">
+                                                20
+                                            </li>
+                                            <li class="dropdown__item" value="50">
+                                                50
+                                            </li>
+                                            <li class="dropdown__item" value="100">
+                                                100
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="pagination-right__action m-d-flex m-ml-12 m-mr-12"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Main Content -->
+            </div>
+        </div>
+        <!-- End Container -->
+    </div>
+    <!-- Start Employee Form -->
+    <div id="dlgEmployee" class="m-form-wrapper">
+        <form action="" class="m-d-flex">
+            <div class="m-form-container">
+                <div class="form__header m-d-flex">
+                    <div class="form-header__title m-mr-12">
+                        Thêm mới nhân viên
+                    </div>
+                    <div class="form-header__option m-d-flex">
+                        <div class="m-wrapper-checkbox">
+                            <input class="m-r-8" type="checkbox" id="khach_hang" />
+                            <span class="checkmark">Là khách hàng</span>
+                        </div>
+                        <div class="m-wrapper-checkbox">
+                            <input class="m-r-8" type="checkbox" id="nha_cung_cap" />
+                            <span class="checkmark">Là nhà cung cấp</span>
+                        </div>
+                    </div>
+                    <div class="form-header__action m-d-flex m-ml-auto">
+                        <div class="m-icon m-icon--help" title="Trợ giúp (F1)"></div>
+                        <div class="m-icon m-icon--close" title="Đóng (ESC)"></div>
+                    </div>
+                </div>
+                <div class="form__content">
+                    <div class="form-content__top">
+                        <div class="form-content__left m-mr-24">
+                            <div class="m-d-flex">
+                                <div class="textfield-wrapper m-width-40 m-mr-8">
+                                    <label for="" class="textfield__label">
+                                 Mã
+                                 <span class="textfield__label--require"
+                                    >*</span
+                                 >
+                              </label>
+                                    <div class="textfield__container">
+                                        <input type="text" id="ma_nhan_vien" class="textfield__input textfield__input--required" />
+                                        <p class="input-error hide-text-ellipsis" title="Mã nhân viên không được để trống">
+                                            Mã nhân viên không được để trống
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="textfield-wrapper m-width-60">
+                                    <label for="" class="textfield__label">
+                                 Tên
+                                 <span class="textfield__label--require"
+                                    >*</span
+                                 >
+                              </label>
+                                    <div class="textfield__container">
+                                        <input type="text" id="ten_nhan_vien" class="textfield__input textfield__input--required" />
+                                        <p class="input-error hide-text-ellipsis" title="Tên không được để trống">
+                                            Tên không được để trống
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="textfield-wrapper" id="ten_don_vi">
+                                <label for="" class="textfield__label">
+                              Đơn vị
+                              <span class="textfield__label--require">*</span>
+                           </label>
+                                <div class="textfield__container">
+                                    <input type="text" class="textfield__input textfield__input--required m-pr-36" departmentId readonly />
+                                    <p class="input-error hide-text-ellipsis" title="Đơn vị không được để trống">
+                                        Đơn vị không được để trống
+                                    </p>
+                                    <button id="ddDepartment" type="button" class="textfield__icon m-icon m-icon-large m-icon-down-dd">
+                              </button>
+                                    <ul class="dropdownlist droplistitem">
+                                        <!-- <li class="dropdown__item">Hà Nội</li>
+                                        <li class="dropdown__item">TP Hồ Chí Minh</li>
+                                        <li class="dropdown__item">Đà Nẵng</li>
+                                        <li class="dropdown__item">Hải Phòng</li>
+                                        <li class="dropdown__item">Hải Dương</li> -->
+                                    </ul>
+                                    <p class="input-error hide-text-ellipsis">
+                                        Trường này không được để trống
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="textfield-wrapper">
+                                <label for="" class="textfield__label">
+                              Chức danh
+                           </label>
+                                <div class="textfield__container">
+                                    <input type="text" id="chuc_danh" class="textfield__input" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-content__right">
+                            <div class="m-d-flex">
+                                <div class="textfield-wrapper m-width-40 m-mr-8">
+                                    <label for="" class="textfield__label">Ngày sinh</label
+                              >
+                              <div class="textfield__container">
+                                 <input
+                                    type="date"
+                                    id="ngay_sinh"
+                                    class="textfield__input textfield__input--date"
+                                 />
+                                 <!-- <p class="input-error hide-text-ellipsis">
+                                    Ngày sinh không được lớn hơn ngày hiện tại
+                                </p> -->
+                              </div>
+                           </div>
+                           <div class="textfield-wrapper m-width-60">
+                              <label for="" class="textfield__label">
+                                 Giới tính
+                              </label>
+                                    <div class="m-d-flex">
+                                        <div class="textfield__container textfield__container--radio">
+                                            <input type="radio" class="textfield__input--radio" name="gender-form" value="1" />
+                                            <span>Nam</span>
+                                        </div>
+                                        <div class="textfield__container textfield__container--radio">
+                                            <input type="radio" class="textfield__input--radio" name="gender-form" value="0" />
+                                            <span>Nữ</span>
+                                        </div>
+                                        <div class="textfield__container textfield__container--radio">
+                                            <input type="radio" class="textfield__input--radio" name="gender-form" value="2" />
+                                            <span>Khác</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-d-flex">
+                                <div class="textfield-wrapper m-width-60 m-mr-8">
+                                    <label for="" class="textfield__label" title="Số chứng minh nhân dân">
+                                 Số CMND
+                              </label>
+                                    <div class="textfield__container">
+                                        <input type="text" id="cccd" class="textfield__input" />
+                                    </div>
+                                </div>
+                                <div class="textfield-wrapper m-width-40">
+                                    <label for="" class="textfield__label">
+                                 Ngày cấp
+                              </label>
+                                    <div class="textfield__container">
+                                        <input type="date" id="ngay_cap_cccd" class="textfield__input textfield__input--date" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="textfield-wrapper">
+                                <label for="" class="textfield__label">
+                              Nơi cấp
+                           </label>
+                                <div class="textfield__container">
+                                    <input type="text" id="noi_cap_cccd" class="textfield__input" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-content__bottom m-pb-12">
+                        <div class="textfield-wrapper">
+                            <label for="" class="textfield__label"> Địa chỉ </label>
+                            <div class="textfield__container">
+                                <input type="text" id="dia_chi" class="textfield__input" />
+                            </div>
+                        </div>
+                        <div class="m-d-flex">
+                            <div class="textfield-wrapper m-mr-8 m-width-25">
+                                <label for="" class="textfield__label" title="Điện thoại dinh động">
+                              ĐT di động
+                           </label>
+                                <div class="textfield__container">
+                                    <input type="text" id="sdt" class="textfield__input" />
+                                </div>
+                            </div>
+                            <div class="textfield-wrapper m-mr-8 m-width-25">
+                                <label for="" class="textfield__label" title="Điện thoại cố định">
+                              ĐT cố định
+                           </label>
+                                <div class="textfield__container">
+                                    <input type="text" id="sdt_co_dinh" class="textfield__input" />
+                                </div>
+                            </div>
+                            <div class="textfield-wrapper m-mr-8 m-width-25">
+                                <label for="" class="textfield__label">
+                              Email
+                           </label>
+                                <div class="textfield__container">
+                                    <input type="text" id="email" class="textfield__input" />
+                                </div>
+                            </div>
+                            <div class="m-width-25"></div>
+                        </div>
+                        <div class="m-d-flex">
+                            <div class="textfield-wrapper m-mr-8 m-width-25">
+                                <label for="" class="textfield__label">
+                              Tài khoản ngân hàng
+                           </label>
+                                <div class="textfield__container">
+                                    <input type="text" id="tk_ngan_hang" class="textfield__input" />
+                                </div>
+                            </div>
+                            <div class="textfield-wrapper m-mr-8 m-width-25">
+                                <label for="" class="textfield__label">
+                              Tên ngân hàng
+                           </label>
+                                <div class="textfield__container">
+                                    <input type="text" id="ten_ngan_hang" class="textfield__input" />
+                                </div>
+                            </div>
+                            <div class="textfield-wrapper m-mr-8 m-width-25">
+                                <label for="" class="textfield__label">
+                              Chi nhánh
+                           </label>
+                                <div class="textfield__container">
+                                    <input type="text" id="chi_nhanh" class="textfield__input" />
+                                </div>
+                            </div>
+                            <div class="m-width-25"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form__footer m-d-flex">
+                    <div class="form-footer__right m-d-flex">
+                        <button type="button" class="btn btn-sub" id="btnSave">
+                        Cất
+                     </button>
+                        <button type="button" class="btn btn-primary" id="btnSaveAdd">
+                        Cất và thêm mới
+                     </button>
+                    </div>
+                    <div class="form-footer__left">
+                        <button type="button" class="btn btn-sub" id="btnCancel">
+                        Hủy
+                     </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- End Employee Form -->
+    <!-- Start Warning Dialog -->
+    <div class="m-popup-wrapper warning-close-form">
+        <div class="m-popup-container">
+            <div class="popup__header"></div>
+            <div class="popup__body m-d-flex">
+                <div class="popup-body__left">
+                    <div class="m-icon m-icon__help-popup"></div>
+                </div>
+                <div class="popup-body__right">
+                    Dữ liệu đã bị thay đổi. Bạn có muốn cất không ?
+                </div>
+            </div>
+            <div class="popup__footer m-d-flex">
+                <div class="popup-footer__left">
+                    <button class="btn btn-sub">Hủy</button>
+                </div>
+                <div class="popup-footer__right">
+                    <button class="btn btn-sub">Không</button>
+                    <button class="btn btn-primary">Có</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Warning Dialog-->
+    <!-- Start Delete Dialog-->
+    <div class="m-popup-wrapper warning-delete-form">
+        <div class="m-popup-container">
+            <div class="popup__header"></div>
+            <div class="popup__body m-d-flex">
+                <div class="popup-body__left">
+                    <div class="m-icon m-icon-warning"></div>
+                </div>
+                <div class="popup-body__right">
+                    Bạn có muốn xóa bản ghi này không?
+                </div>
+            </div>
+            <div class="popup__footer m-d-flex">
+                <div class="popup-footer__left">
+                    <button class="btn btn-sub">Không</button>
+                </div>
+                <div class="popup-footer__right">
+                    <button class="btn btn-primary">Có</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Delete Dialog-->
+    <!-- Start Error Dialog-->
+    <div id="dialogError" class="m-popup-wrapper error-submit-form">
+        <div class="m-popup-container">
+            <div class="popup__header"></div>
+            <div class="popup__body m-d-flex">
+                <div class="popup-body__left">
+                    <div class="m-icon m-icon-warning"></div>
+                </div>
+                <div class="popup-body__right">
+                    Mã nhân viên đã tồn tại trong hệ thống.
+                </div>
+            </div>
+            <div class="popup__footer m-d-flex">
+                <div class="popup-footer__left">
+                    <!-- <button class="btn btn-sub">Hủy</button> -->
+                </div>
+                <div class="popup-footer__right">
+                    <!-- <button class="btn btn-sub">Không</button> -->
+                    <button id="btnDialogConfirm" class="btn btn-primary">Xác nhận</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Error Dialog-->
+    <!-- Start Error Dialog-->
+    <!-- <div class="m-popup-wrapper error-submit-form">
+        <div class="m-popup-container">
+            <div class="popup__header"></div>
+            <div class="popup__body m-d-flex">
+                <div class="popup-body__left">
+                    <div class="m-icon m-icon__error-popup"></div>
+                </div>
+                <div class="popup-body__right">
+                    Dữ liệu đã bị thay đổi. Bạn có muốn cất không ?
+                </div>
+            </div>
+            <div class="popup__footer m-d-flex">
+                <div class="popup-footer__left">
+                </div>
+                <div class="popup-footer__right">
+                    <button class="btn btn-primary">Xác nhận</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- End Error Dialog-->
+    <!-- Start Toast -->
+    <div class="m-toast-wrapper">
+        <div class="toast-message">
+            <span class="toast-icon toast-icon--succes">
+           <i class="fa-solid fa-circle-check"></i>
+        </span>
+            <div class="toast-content">
+                <span class="toast-title toast-title--success">Toast!</span>
+                <span class="toast-text">Đây là toast</span>
+            </div>
+            <a href="" class="toast-action">Hoàn tác</a>
+            <button class="toast-close">
+           <i class="fa-solid fa-xmark"></i>
+        </button>
+        </div>
+    </div>
+    <!-- End Toast -->
+    <!-- Start Loading -->
+    <div class="m-loading">
+        <div class="m-loading-icon"></div>
+    </div>
+    <!-- End Loading -->
+</body>
+<!-- Script -->
+<!-- Nhúng thư viện Jquery -->
+<script src="../js/lib/jquery-3.6.1.min.js"></script>
+<!-- Nhúng thư viện Javascript dùng chung -->
+<script src="../js/main.js"></script>
+<script src="../js/resource.js"></script>
+<!-- Nhúng thư viện cho trang Employee -->
+<script src="../js/components/deletemulti.js"></script>
+<script src="../js/components/sidebar.js"></script>
+<script src="../js/components/pagging.js"></script>
+<script src="../js/components/employee.js"></script>
+
+</html>

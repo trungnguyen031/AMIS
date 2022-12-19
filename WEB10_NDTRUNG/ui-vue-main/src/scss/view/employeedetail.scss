@@ -1,0 +1,240 @@
+/* Header */
+
+
+/* End Header */
+
+
+/* Popup content */
+
+
+/* End content */
+
+
+/* Footer container */
+
+
+/* End Footer */
+
+
+/* overlay */
+
+.m-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    background-color: var(--background-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.m-popup__content {
+    width: 900px;
+    background-color: var(--white-color);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.m-popup__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 32px;
+}
+
+.m-popup__title {
+    width: 100%;
+    padding: 0 12px 0 32px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.m-popup__title-header {
+    display: flex;
+    padding-bottom: 24px;
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 0 1.5rem;
+        span {
+            padding-left: 10px;
+        }
+    }
+}
+
+.m-popup__title-text {
+    font-size: 24px;
+    color: var(--main-title);
+    font-weight: 700;
+}
+
+.popup-checkbox {
+    width: 18px;
+    height: 18px;
+    justify-content: start;
+    cursor: pointer;
+}
+
+.m-popup__close {
+    display: flex;
+    padding-right: 32px;
+}
+
+.m-popup__content-main {
+    overflow: auto;
+    padding: 0 32px 32px 32px;
+    label {
+        font-size: 13px !important;
+        line-height: normal !important;
+    }
+}
+
+.content__employee-form {
+    display: flex;
+}
+
+.employee-form__left {
+    padding-right: 26px;
+    width: calc(50% - 26px);
+}
+
+.employee-form__right {
+    width: 50%;
+}
+
+.color-red {
+    color: var(--red-color);
+}
+
+.form-popup {
+    display: flex;
+    padding-bottom: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    label {
+        padding-bottom: 8px;
+        font-weight: 700;
+    }
+    .error_text {
+        position: absolute;
+        top: calc(100% + 6px);
+        color: var(--red-color);
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-weight: 400;
+    }
+}
+
+.employee-code {
+    width: 40%;
+    padding-right: 10px;
+}
+
+.dob {
+    width: 40%;
+    padding-right: 10px;
+    padding-right: 12px;
+}
+
+.employee-name {
+    width: 60%;
+}
+
+.gender {
+    width: 60%;
+}
+
+.department-name {
+    width: 100%;
+    .combobox {
+        input {
+            border-width: 1px;
+            border-radius: 4px;
+            border-color: var(--border-input-color);
+            border-style: solid;
+        }
+        .combobox__data {
+            bottom: unset;
+            top: calc(100% + 1px);
+            z-index: 1;
+        }
+    }
+}
+
+.position-name {
+    width: 100%;
+}
+
+.id-place {
+    width: 100%;
+}
+
+.address {
+    width: 100%;
+}
+
+.input-gender {
+    padding-right: 16px;
+    width: 20px;
+    height: 20px;
+    accent-color: var(--primary-color);
+}
+
+.lable-gender {
+    padding-right: 16px;
+    padding-left: 8px;
+    font-weight: 400 !important;
+}
+
+.id-number {
+    width: 60%;
+    padding-right: 10px;
+}
+
+.id-date {
+    width: 40%;
+}
+
+.content-employee__contact {
+    width: 100%;
+    border-bottom: 1px solid var(--border-input-color);
+}
+
+.contact {
+    width: calc(25% - 10px);
+    padding-right: 10px;
+}
+
+.m-popup__footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.m-popup__footer-left {
+    display: flex;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: auto;
+}

@@ -1,0 +1,42 @@
+.m-main__paging {
+    position: absolute;
+    height: 48px;
+    width: calc(100% - 32px);
+    bottom: 0;
+    margin-left: 16px;
+    margin-right: 16px;
+    /* border-top: 1px solid #bbbbbb; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.m-paging__left {
+    padding-left: 16px;
+}
+
+.m-paging__right {
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+}
+
+.paging-number {
+    display: flex;
+    align-items: center;
+}
+
+.number-page-none {
+    border: none;
+    background-color: var(--white-color);
+    min-width: 24px;
+    cursor: pointer;
+}
+
+.paging__label {
+    width: auto;
+}
+
+.paging-list {
+    width: 80px;
+}

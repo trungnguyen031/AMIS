@@ -1,0 +1,62 @@
+.m-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background-dark);
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.m-dialog__content {
+    width: 444px;
+    min-width: 444px;
+    height: 183px;
+    background-color: var(--white-color);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.m-dialog__content--main {
+    padding: 32px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.content-footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-footer-left {
+    display: flex;
+}
+
+.message-content {
+    overflow: auto;
+    max-height: 400px;
+    margin-bottom: 32px;
+    padding-left: 16px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+}
+
+.btnToastDelete {
+    background-color: var(--delete-color);
+    &:hover {
+        background-color: var(--delete-hover-color);
+    }
+    &:focus {
+        background-color: var(--delete-focus-color);
+    }
+}

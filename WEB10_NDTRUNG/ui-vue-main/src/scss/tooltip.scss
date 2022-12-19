@@ -1,0 +1,169 @@
+/* tooltip reload */
+
+
+/* Tooltip Số CMND */
+
+
+/* Thu gọn menu */
+
+
+/* Mở rộng menu */
+
+
+/* Thông báo */
+
+
+/* Popup close */
+
+
+/* Popup help */
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: var(--tooltip-color);
+    height: 40px;
+    width: 120px;
+    top: 100%;
+    color: var(--white-color);
+    border-radius: 4px;
+    z-index: 10;
+    font-weight: 400;
+    box-sizing: unset;
+    label {
+        padding: 12px 16px;
+        line-height: 40px;
+        position: relative;
+        div {
+            position: absolute;
+            border-left: 10px transparent solid;
+            border-right: 10px transparent solid;
+            border-bottom: 20px var(--tooltip-color) solid;
+        }
+    }
+}
+
+.tooltip-reload {
+    right: 0;
+    width: 120px;
+    top: 150%;
+    label {
+        div {
+            top: -5px;
+            right: -4px;
+        }
+    }
+}
+
+.tooltip__id-number {
+    width: 190px;
+    label {
+        div {
+            top: -5px;
+        }
+    }
+}
+
+.thead__id-number {
+    &:hover {
+        .tooltip__id-number {
+            display: block;
+        }
+    }
+}
+
+.tooltip__option {
+    top: 30px;
+    left: 0;
+    width: 140px;
+    label {
+        div {
+            top: -5px;
+        }
+    }
+}
+
+.icon-option {
+    &:hover {
+        .tooltip__option {
+            display: block;
+        }
+    }
+}
+
+.tooltip__option-white {
+    top: 44px;
+    left: 0;
+    width: 140px;
+    label {
+        div {
+            top: -5px;
+        }
+    }
+}
+
+.icon-option-white {
+    &:hover {
+        .tooltip__option-white {
+            display: block;
+        }
+    }
+}
+
+.tooltip__bell {
+    top: 35px;
+    left: 0;
+    width: 100px;
+    label {
+        div {
+            top: -5px;
+        }
+    }
+}
+
+.icon-bell {
+    &:hover {
+        .tooltip__bell {
+            display: block;
+        }
+    }
+}
+
+.tooltip__close {
+    top: 35px;
+    left: 0;
+    width: 100px;
+    label {
+        div {
+            top: -5px;
+        }
+    }
+}
+
+.icon-close {
+    &:hover {
+        .tooltip__close {
+            display: block;
+        }
+    }
+}
+
+.tooltip__help {
+    margin-top: 2px;
+    top: 35px;
+    left: 0;
+    width: 100px;
+    label {
+        div {
+            top: -5px;
+        }
+    }
+}
+
+.icon-help {
+    &:hover {
+        .tooltip__help {
+            display: block;
+        }
+    }
+}

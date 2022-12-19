@@ -1,0 +1,190 @@
+.m-sidebar {
+    width: var(--width-sidebar);
+    height: 100vh;
+    background-color: var(--sidebar-color);
+    float: left;
+    color: var(--white-color);
+}
+
+.m-sidebar__header {
+    height: 56px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-left: 30px;
+}
+
+.m-sidebar__header b {
+    padding-left: 4px;
+    cursor: pointer;
+}
+
+.m-sidebar__logo {
+    background-image: url("../../assets/favicon.ico");
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.m-sidebar__main {
+    height: calc(100vh - 100px);
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.m-sidebar__menu {
+    padding: 20px 12px;
+    height: calc(100% - 84px);
+}
+
+.m-sidebar__menu-item {
+    display: flex;
+    cursor: pointer !important;
+    /* width: 100%; */
+    align-items: center;
+    height: 24px;
+    margin-bottom: 4px;
+    padding: 10px 12px;
+    position: relative;
+}
+
+.item-icon {
+    padding-right: 12px;
+}
+
+.item-text {
+    color: var(--item-text);
+}
+
+.m-sidebar__menu-item:hover {
+    background-color: var(--sidebar-hover-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.m-sidebar__menu-item:hover .item-text {
+    color: var(--white-color);
+}
+
+.m-sidebar__menu-item:hover .item-icon {
+    opacity: 1;
+}
+
+.m-sidebar__menu-item--selected {
+    background-color: var(--sidebar-selected-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.m-sidebar__menu-item--selected .item-text {
+    color: var(--white-color);
+}
+
+.m-sidebar__menu-item--selected .item-icon {
+    opacity: 1;
+}
+
+.m-sidebar-bottom {
+    height: 44px;
+    width: 100%;
+    bottom: 0;
+}
+
+
+/* CSS thu Gọn (25/10/2022) */
+
+.sidebar-toggle {
+    --width-sidebar: 73px !important;
+    width: var(--width-sidebar);
+    height: 100vh;
+    overflow: unset;
+}
+
+.sidebar-toggle+div {
+    width: calc(100% - 73px - 12px);
+}
+
+.sidebar-toggle+div+div {
+    width: calc(100% - 73px - 36px - 12px);
+}
+
+.sidebar-toggle .m-sidebar__header .sidebar-hiden {
+    display: none;
+}
+
+.sidebar-toggle .m-sidebar__header .icon-option-white {
+    display: block;
+}
+
+.sidebar-toggle .m-sidebar__main .m-sidebar__menu .m-sidebar__menu-item .item-text {
+    position: absolute;
+    display: none;
+    align-items: center;
+    white-space: nowrap;
+    padding: 0 16px;
+    left: 150%;
+    height: 40px;
+    border-radius: 4px;
+    /* background-color: #38393d; */
+    z-index: 10;
+}
+
+.sidebar-toggle .m-sidebar__main .m-sidebar__menu .m-sidebar__menu-item .item-text::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid;
+}
+
+.sidebar-toggle .m-sidebar__main .m-sidebar__menu .item-1:hover .item-text,
+.sidebar-toggle .m-sidebar__main .m-sidebar__menu .item-2:hover .item-text,
+.sidebar-toggle .m-sidebar__main .m-sidebar__menu .item-3:hover .item-text,
+.sidebar-toggle .m-sidebar__main .m-sidebar__menu .item-4:hover .item-text,
+.sidebar-toggle .m-sidebar__main .m-sidebar__menu .item-5:hover .item-text,
+.sidebar-toggle .m-sidebar__main .m-sidebar__menu .item-6:hover .item-text,
+.sidebar-toggle .m-sidebar__main .m-sidebar__menu .item-7:hover .item-text,
+.sidebar-toggle .m-sidebar__main .m-sidebar__menu .item-8:hover .item-text,
+.sidebar-toggle .m-sidebar__main .m-sidebar__menu .item-9:hover .item-text,
+.sidebar-toggle .m-sidebar__main .m-sidebar__menu .item-10:hover .item-text,
+.sidebar-toggle .m-sidebar__main .m-sidebar__menu .item-11:hover .item-text,
+.sidebar-toggle .m-sidebar__main .m-sidebar__menu .item-12:hover .item-text,
+.sidebar-toggle .m-sidebar__main .m-sidebar__menu .item-13:hover .item-text,
+.sidebar-toggle .m-sidebar__main .m-sidebar__menu .item-14:hover .item-text {
+    display: flex;
+}
+
+
+/* Scrollbar */
+
+.m-sidebar__main::-webkit-scrollbar {
+    width: 10px;
+    /* background: #000; */
+    height: 10px;
+}
+
+.m-sidebar__main::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 4px;
+}
+
+.m-sidebar__main::-webkit-scrollbar-track {
+    background: var(--sidebar-scrollbar-track);
+    border-radius: 4px;
+}
+
+.m-sidebar__main::-webkit-scrollbar-thumb {
+    background: var(--sidebar-scrollbar-thumb);
+    border-radius: 4px;
+}
+
+.m-sidebar__main::-webkit-scrollbar-thumb:hover {
+    background: var(--sidebar-scrollbar-thumb-hover);
+    border-radius: 4px;
+}

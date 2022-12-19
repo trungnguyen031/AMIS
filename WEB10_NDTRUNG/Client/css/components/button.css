@@ -1,0 +1,64 @@
+.btn {
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 80px;
+    height: 36px;
+    text-align: center;
+    padding: 8px 16px 8px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.btn+.btn {
+    margin-left: 12px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.btn-primary:focus {
+    background-color: var(--primary-focus-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover-color);
+}
+
+.btn.btn--icon {
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+.btn--icon>i {
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+.btn-sub {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid var(--border-button-extra-color);
+}
+
+.btn-sub:hover {
+    background-color: var(--extra-hover-color);
+}
+
+.btn-sub:focus {
+    background-color: var(--extra-focus-color);
+}
+
+.btn-delete {
+    background-color: var(--red-color);
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.btn-delete:hover {
+    background-color: var(--delete-hover);
+}

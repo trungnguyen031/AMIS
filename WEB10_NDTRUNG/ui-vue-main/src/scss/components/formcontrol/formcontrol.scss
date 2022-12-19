@@ -1,0 +1,19 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    label {
+        padding-bottom: 8px;
+        font-weight: 700;
+    }
+    .error_text {
+        position: absolute;
+        top: calc(100% + 4px) !important;
+        color: var(--red-color);
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-weight: 400;
+    }
+}

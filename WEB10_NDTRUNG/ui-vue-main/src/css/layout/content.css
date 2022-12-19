@@ -1,0 +1,98 @@
+.m-main {
+    width: calc(100% - var(--width-sidebar) - 36px - 12px);
+    height: calc(100vh - 56px - 36px - 12px);
+    background-color: var(--white-color);
+    float: left;
+    overflow: hidden;
+    margin: 24px;
+    position: relative;
+}
+
+.tooltip-relative {
+    position: relative;
+}
+
+.tooltip-relative:hover .tooltip {
+    display: block;
+}
+
+.m-main__header label {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.m-main__table {
+    width: calc(100% -32px);
+    height: calc(100% - 105px);
+    background-color: var(--white-color);
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.m-input-icon {
+    background-repeat: no-repeat;
+    background-position: right 6px center;
+    padding-right: 32px;
+    padding-left: 16px;
+}
+
+.m-main__table-header {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: -16px;
+}
+
+.m-main__table-header input {
+    margin-right: 16px;
+}
+
+.m-main__table-body {
+    /* padding-right: 8px; */
+    max-height: calc(100% - 60px);
+    overflow: auto;
+}
+
+.m-main__table-body::-webkit-scrollbar {
+    width: 10px;
+    background: var(--black-color);
+    height: 10px;
+}
+
+.m-main__table-body::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 4px;
+}
+
+
+/* Track */
+
+.m-main__table-body::-webkit-scrollbar-track {
+    background: var(--content-scrollbar-track);
+    border-radius: 4px;
+}
+
+
+/* Handle */
+
+.m-main__table-body::-webkit-scrollbar-thumb {
+    background: var(--content-scrollbar-thumb);
+    border-radius: 4px;
+}
+
+
+/* Handle on hover */
+
+.m-main__table-body::-webkit-scrollbar-thumb:hover {
+    background: var(--content-scrollbar-thumb-hover);
+    border-radius: 4px;
+}
+
+
+/* End update table */
+
+
+/* End Main */
